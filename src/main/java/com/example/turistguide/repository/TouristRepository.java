@@ -1,7 +1,7 @@
-package repository;
+package com.example.turistguide.repository;
 
 
-import model.TouristAttraction;
+import com.example.turistguide.model.TouristAttraction;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
@@ -21,6 +21,10 @@ public class TouristRepository {
         data.add(t1);
         data.add(t2);
         data.add(t3);
+    }
+
+    public ArrayList<TouristAttraction> getDataList() {
+        return data;
     }
 
 

@@ -1,4 +1,4 @@
-package model;
+package com.example.turistguide.model;
 
 public class TouristAttraction {
 
@@ -11,5 +11,24 @@ public class TouristAttraction {
         this.description = description;
     }
 
+    public String getName() {
+        return name;
+    }
 
+    public String getDescription() {
+        return description;
+    }
+
+    public void setName(String newName) {
+        name = newName;
+    }
+
+    public void setDescription(String newDescription) {
+        description = newDescription;
+    }
+
+
+    public String toString() {
+        return name + description;
+    }
 }
